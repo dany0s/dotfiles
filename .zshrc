@@ -111,6 +111,10 @@ PROMPT=$'%{\e[1;32m%}%~%{\e[0m%} %# '
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+source ~/.zsh/general.zsh
+source ~/.zsh/secret-aliases.zsh
+
 export JAVA_HOME=/Users/dan/Library/Java/JavaVirtualMachines/corretto-17.0.4.1/Contents/Home
 export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
 
@@ -118,38 +122,11 @@ export PATH="/opt/homebrew/opt/ruby@2.7/bin:$PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 export PATH="/opt/homebrew/opt/ruby@2.6/bin:$PATH"
-alias wazan='cd /Users/dan/code/wazan-app'
-alias wazanb='cd /Users/dan/code/wazan-backend'
-alias obs="cd /Users/dan/alexandria/obsidian"
-alias rf="source ~/.zshrc"
-alias n="nvim"
 export PATH="$PATH:/Users/dan/tools/platform-tools"
 
-# core alias
-alias ls='lsd -l'
-alias lsa='lsd -al'
-alias lz='lazygit'
-
-
-#docker alias
-alias dc='docker-compose'
-alias dcu='docker-compose up -d'
-alias dcd='docker-compose down'
-alias dcl='docker-compose logs -f'
-alias dcp='docker ps'
-
-# 
-# bluetooth headset
-alias cans="blueutil --connect 88-c9-e8-9a-66-59"
-alias mars="ssh -i ~/.ssh/id_dany0s dany0s@157.230.93.58"
-alias proxima="ssh -i ~/.ssh/id_dany0s dany0s@10.0.0.20"
-alias palaestra01="ssh -i ~/.ssh/id_dany0s dany0s@10.0.0.171"
-alias proxima_root="ssh -i ~/.ssh/id_rsa root@10.0.0.20"
-# export LSCOLORS="exfxcxdxbxegedabagacad"
-# export PATH="$PATH:/opt/homebrew/bin/nvim"
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+export PATH="$HOME/.local/bin:$PATH"
