@@ -1,0 +1,46 @@
+{
+    "title": "Custom Complex Modifications",
+    "rules": [
+        {
+            "description": "Remap Page Up/Down to Mouse Scroll",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "page_up",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "vertical_wheel": -100
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "page_down",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "mouse_key": {
+                                "vertical_wheel": 100
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

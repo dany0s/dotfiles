@@ -1,0 +1,168 @@
+{
+  "title": "Hyper Key sublayer \"o\"",
+  "rules": [
+    {
+      "description": "Hyper Key sublayer \"o\"",
+      "manipulators": [
+        {
+          "description": "Toggle Hyper sublayer o",
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_command",
+                "left_control",
+                "left_shift",
+                "left_option"
+              ]
+            }
+          },
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "hyper_sublayer_o",
+                "value": 0
+              }
+            }
+          ],
+          "to": [
+            {
+              "set_variable": {
+                "name": "hyper_sublayer_o",
+                "value": 1
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "hyper_sublayer_w",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "to": [
+            {
+              "shell_command": "open -a 'Obsidian.app'"
+            }
+          ],
+          "description": "Open -a 'Obsidian'",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "hyper_sublayer_o",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "to": [
+            {
+              "shell_command": "open -a 'Visual Studio Code.app'"
+            }
+          ],
+          "description": "Open Visual Studio Code",
+          "type": "basic",
+          "from": {
+            "key_code": "v",
+            "modifiers": {
+              "mandatory": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "hyper_sublayer_o",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "to": [
+            {
+              "shell_command": "open -a 'WezTerm.app'"
+            }
+          ],
+          "description": "Open WezTerm",
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "hyper_sublayer_o",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "to": [
+            {
+              "shell_command": "open -a 'brave Browser.app'"
+            }
+          ],
+          "description": "Open Brave",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "hyper_sublayer_o",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "to": [
+            {
+              "shell_command": "open -a 'Android Studio.app'"
+            }
+          ],
+          "description": "Open Android Studio",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "hyper_sublayer_o",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
