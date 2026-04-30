@@ -2,5 +2,7 @@
 
 - link:
     ~/.config/nvim: .config/nvim
-    ~/.config/karabiner: .config/karabiner
+    ~/.config/karabiner:
+      path: .config/karabiner
+      force: true
     ~/.zshrc: .zshrc
