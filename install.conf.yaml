@@ -1,0 +1,5 @@
+- clean: ['~']        # remove dead symlinks
+
+- link:
+    ~/.config/nvim: .config/nvim
+    ~/.zshrc: .zshrc

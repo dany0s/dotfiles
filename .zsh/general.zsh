@@ -23,5 +23,5 @@ alias dcp='docker ps'
 alias clear='clear && tmux clear-history'
 
 # bluetooth headset
-alias cans="blueutil --connect 88-c9-e8-9a-66-59"
+alias cans="blueutil --connect 80-99-e7-f1-2d-40"
 
