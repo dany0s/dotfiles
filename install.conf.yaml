@@ -2,6 +2,7 @@
 - create:
     - ~/.config/zsh
     - ~/.cache/zsh
+    - ~/.local/state/tmux
 
 - link:
     ~/.config/nvim: .config/nvim
@@ -15,6 +16,7 @@
     ~/.zshenv:
       path: .zshenv
       force: true
+    ~/.config/tmux/tmux.conf: .config/tmux/tmux.conf
 
 - shell:
     - command: '[ -d "$HOME/.oh-my-zsh" ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'
