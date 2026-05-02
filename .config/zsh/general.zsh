@@ -2,7 +2,7 @@
 # core alias
 alias ls='lsd -l'
 alias lsa='lsd -al'
-alias rf="source ~/.zshrc"
+alias rf="source ~/.config/zsh/.zshrc"
 
 # programs
 alias lz='lazygit'
@@ -21,7 +21,4 @@ alias dcd='docker-compose down'
 alias dcl='docker-compose logs -f'
 alias dcp='docker ps'
 alias clear='clear && tmux clear-history'
-
-# bluetooth headset
-alias cans="blueutil --connect 88-c9-e8-9a-66-59"
 
