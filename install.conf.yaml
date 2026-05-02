@@ -1,8 +1,17 @@
 - clean: ['~']        # remove dead symlinks
+- create:
+    - ~/.config/zsh
+    - ~/.cache/zsh
 
 - link:
     ~/.config/nvim: .config/nvim
     ~/.config/karabiner:
       path: .config/karabiner
       force: true
-    ~/.zshrc: .zshrc
+    ~/.config/zsh/.zshrc: .config/zsh/.zshrc
+    ~/.config/zsh/.zprofile: .config/zsh/.zprofile
+    ~/.config/zsh/general.zsh: .config/zsh/general.zsh
+    ~/.config/zsh/secret-aliases.zsh: .config/zsh/secret-aliases.zsh
+    ~/.zshenv: 
+      path: .zshenv
+      force: true

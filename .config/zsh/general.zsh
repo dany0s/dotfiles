@@ -2,7 +2,7 @@
 # core alias
 alias ls='lsd -l'
 alias lsa='lsd -al'
-alias rf="source ~/.zshrc"
+alias rf="source ~/.config/zsh/.zshrc"
 
 # programs
 alias lz='lazygit'
