@@ -1,33 +1,44 @@
 return {
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-		config = function()
-			local config = require("nvim-treesitter.configs")
-			config.setup({
-				ensure_installed = { "lua", "javascript", "kotlin", "html" },
-				highlight = { enable = true },
-				indent = { enable = true },
-				autopairs = { enable = true }
-			})
-		end,
-	},
-	{
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-		config = function()
-			require("nvim-autopairs").setup({
-				check_ts = true, -- enable treesitter integration
-			})
-		end,
-	},
-	{
-		"windwp/nvim-ts-autotag",
-		dependencies = "nvim-treesitter/nvim-treesitter",
-		event = "InsertEnter",
-		config = function()
-			require('nvim-ts-autotag').setup()
-		end
-	}
-}
+  {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "main",
+		build = nil,
+    lazy = false,
+    config = function()
+      require("nvim-treesitter").install({
+        "lua",
+        "javascript",
+        "kotlin",
+        "html",
+        "markdown",
+        "markdown_inline",
+        "vim",
+        "vimdoc",
+        "query",
+      })
 
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function(args)
+          pcall(vim.treesitter.start, args.buf)
+        end,
+      })
+    end,
+  },
+
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = function()
+      require("nvim-autopairs").setup({
+        check_ts = true,
+      })
+    end,
+  },
+
+  {
+    "windwp/nvim-ts-autotag",
+    dependencies = "nvim-treesitter/nvim-treesitter",
+    event = "InsertEnter",
+    opts = {},
+  },
+}
