@@ -15,12 +15,10 @@
     ~/.config/zsh/.zshrc: .config/zsh/.zshrc
     ~/.config/zsh/.zprofile: .config/zsh/.zprofile
     ~/.config/zsh/general.zsh: .config/zsh/general.zsh
-    ~/.config/zsh/secret-aliases.zsh: .config/zsh/secret-aliases.zsh
     ~/.zshenv: .zshenv
     ~/.config/tmux/tmux.conf: .config/tmux/tmux.conf
     ~/.config/wezterm/wezterm.lua: .config/wezterm/wezterm.lua
-    ~/.config/starship.toml: .config/starship.toml
-
+    ~/.config/oh-my-posh: .config/oh-my-posh
 
 - shell:
     - command: '[ -d "$HOME/.oh-my-zsh" ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'

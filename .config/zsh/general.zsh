@@ -1,4 +1,6 @@
 
+precmd() { echo }
+
 # core alias
 alias ls='lsd -l'
 alias lsa='lsd -al'
