@@ -20,5 +20,10 @@ if [ ! -d "$HOME/.sdkman" ]; then
   curl -s "https://get.sdkman.io" | bash
 fi
 
-# 5. Dotfiles
+# 5. TPM
+if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
+  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
+# 6. Dotfiles
 cd "$HOME/dotfiles" && ./install
