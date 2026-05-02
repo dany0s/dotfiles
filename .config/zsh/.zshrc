@@ -9,3 +9,4 @@ source "$ZDOTDIR/secret-aliases.zsh"
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
