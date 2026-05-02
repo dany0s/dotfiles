@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 
 # GUI apps
 cask "wezterm"
+cask "jetbrains-toolbox"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
 
