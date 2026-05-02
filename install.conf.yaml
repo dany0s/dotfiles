@@ -19,6 +19,7 @@
     ~/.zshenv: .zshenv
     ~/.config/tmux/tmux.conf: .config/tmux/tmux.conf
     ~/.config/wezterm/wezterm.lua: .config/wezterm/wezterm.lua
+    ~/.config/starship.toml: .config/starship.toml
 
 
 - shell:
