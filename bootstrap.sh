@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 set -e
 
@@ -15,15 +15,22 @@ fi
 # 3. Brew bundle
 brew bundle --file="$HOME/dotfiles/Brewfile"
 
-# 4. SDKMAN
-if [ ! -d "$HOME/.sdkman" ]; then
-  curl -s "https://get.sdkman.io" | bash
-fi
-
-# 5. TPM
+# 4. TPM
 if [ ! -d "$HOME/.tmux/plugins/tpm" ]; then
   git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 fi
 
-# 6. Dotfiles
+# 5. Dotfiles
 cd "$HOME/dotfiles" && ./install
+
+# 6. SDKMAN
+if [ ! -d "$HOME/.sdkman" ]; then
+  curl -s "https://get.sdkman.io" | bash
+fi
+
+export SDKMAN_DIR="$HOME/.sdkman"
+source "$SDKMAN_DIR/bin/sdkman-init.sh"
+
+sdk install java 21-tem
+sdk install kotlin
+sdk install maven
