@@ -7,5 +7,13 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
 
 # CLI tools
+brew "fzf"
 brew "zsh"
 brew "git"
+brew "neovim"
+brew "lazygit"
+brew "lsd"
+brew "zoxide"
+brew "zsh-syntax-highlighting"
+brew "zsh-autosuggestions"
+brew "blueutil"

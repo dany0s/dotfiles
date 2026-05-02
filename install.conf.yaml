@@ -12,6 +12,10 @@
     ~/.config/zsh/.zprofile: .config/zsh/.zprofile
     ~/.config/zsh/general.zsh: .config/zsh/general.zsh
     ~/.config/zsh/secret-aliases.zsh: .config/zsh/secret-aliases.zsh
-    ~/.zshenv: 
+    ~/.zshenv:
       path: .zshenv
       force: true
+
+- shell:
+    - command: '[ -d "$HOME/.oh-my-zsh" ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'
+      description: Install Oh My Zsh
