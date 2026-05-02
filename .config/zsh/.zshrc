@@ -5,7 +5,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 source "$ZDOTDIR/general.zsh"
-source "$ZDOTDIR/secret-aliases.zsh"
+[[ -f "$ZDOTDIR/local.zsh" ]] && source "$ZDOTDIR/local.zsh"
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(zoxide init zsh)"

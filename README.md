@@ -20,3 +20,7 @@ If the repo is already cloned:
 ```sh
 cd ~/dotfiles && ./install
 ```
+
+## Local config
+
+Copy `~/.config/zsh/local.zsh` manually to each new machine. See `.config/zsh/local.zsh.example` for the expected format.

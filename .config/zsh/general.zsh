@@ -22,6 +22,3 @@ alias dcl='docker-compose logs -f'
 alias dcp='docker ps'
 alias clear='clear && tmux clear-history'
 
-# bluetooth headset
-alias cans="blueutil --connect 80-99-e7-f1-2d-40"
-

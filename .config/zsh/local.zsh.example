@@ -1,0 +1,10 @@
+# SSH aliases
+alias proxima="ssh -i ~/.ssh/id_xxx user@x.x.x.x"
+alias proxima_root="ssh -i ~/.ssh/id_rsa root@x.x.x.x"
+alias palaestra01="ssh -i ~/.ssh/id_xxx user@x.x.x.x"
+
+# Bluetooth
+alias cans="blueutil --connect xx-xx-xx-xx-xx-xx"
+
+# Project paths
+export WAZAN_SIGNING_CONFIG_PATH=""

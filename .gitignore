@@ -1,4 +1,6 @@
-.zsh/secret-aliases.zsh
+.config/zsh/secret-aliases.zsh
+.config/zsh/local.zsh
+.config/zsh/.zsh_history
 /.config/karabiner/karabiner/automatic_backups
 /.config/karabiner/karabiner/karabiner_backup.json
 .DS_Store
