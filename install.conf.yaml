@@ -17,6 +17,11 @@
       path: .zshenv
       force: true
     ~/.config/tmux/tmux.conf: .config/tmux/tmux.conf
+    ~/.config/wezterm/wezterm.lua:
+      path: .config/wezterm/wezterm.lua
+      force: true
+      create: true
+
 
 - shell:
     - command: '[ -d "$HOME/.oh-my-zsh" ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'
