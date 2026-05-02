@@ -4,12 +4,14 @@ tap "homebrew/cask-fonts"
 # GUI apps
 cask "wezterm"
 cask "jetbrains-toolbox"
+cask "karabiner-elements"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
 
 # CLI tools
 brew "fzf"
 brew "zsh"
+brew "tmux"
 brew "rsync"
 brew "starship"
 brew "git"
