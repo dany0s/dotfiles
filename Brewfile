@@ -10,6 +10,7 @@ cask "font-meslo-lg-nerd-font"
 # CLI tools
 brew "fzf"
 brew "zsh"
+brew "rsync"
 brew "starship"
 brew "git"
 brew "neovim"
