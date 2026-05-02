@@ -13,6 +13,10 @@ return {
 					"lua_ls",
 					"ts_ls",
 					"html",
+					"marksman",
+					"jsonls",
+					"yamlls",
+					"basedpyright",
 				},
 				automatic_enable = true,
 			})
