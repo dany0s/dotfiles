@@ -15,5 +15,10 @@ fi
 # 3. Brew bundle
 brew bundle --file="$HOME/dotfiles/Brewfile"
 
-# 4. Dotfiles
+# 4. SDKMAN
+if [ ! -d "$HOME/.sdkman" ]; then
+  curl -s "https://get.sdkman.io" | bash
+fi
+
+# 5. Dotfiles
 cd "$HOME/dotfiles" && ./install
