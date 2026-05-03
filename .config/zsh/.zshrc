@@ -12,4 +12,6 @@ eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/themes/dusk.omp.json)"
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export SDKMAN_DIR="$HOME/.sdkman"
+export EDITOR=nvim
+export VISUAL=nvim
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
