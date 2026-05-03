@@ -1,0 +1,49 @@
+# ~/.config/lsd/colors.yaml
+# Uses ANSI named colors so lsd defers entirely to the terminal palette.
+# With Dusk in WezTerm, these map as noted.
+
+user:   cyan          # teal  — your username
+group:  blue          # blue  — group name
+
+permission:
+  read:         yellow        # sky   — r
+  write:        magenta       # lavender — w
+  exec:         green         # teal  — x
+  exec-sticky:  green
+  no-access:    blue      # overlay0 — -
+  octal:        blue
+  acl:          cyan
+  context:      cyan
+
+date:
+  hour-old:     white         # subtext1 — recent
+  day-old:      blue          # blue — today
+  older:        blue      # overlay0 — old
+
+size:
+  none:         blue
+  small:        cyan          # teal
+  medium:       blue          # blue
+  large:        magenta       # lavender
+
+inode:
+  valid:        blue
+  invalid:      red
+
+links:
+  valid:        magenta
+  invalid:      red
+
+tree-edge:      blue
+
+git-status:
+  default:      blue
+  unmodified:   blue
+  ignored:      blue
+  new-in-index: green         # teal — staged additions
+  new-in-workdir: cyan        # sky  — untracked
+  typechange:   yellow
+  deleted:      red           # rose — deletions
+  renamed:      blue
+  modified:     yellow        # sky  — modified
+  conflicted:   red

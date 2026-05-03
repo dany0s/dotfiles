@@ -25,9 +25,9 @@ config.colors = {
   foreground    = '#e4e8ff',
   background    = '#1e1f2e',
 
-  cursor_bg     = '#b4befe',
+  cursor_bg     = '#c5cbff',   -- lavender
   cursor_fg     = '#1e1f2e',
-  cursor_border = '#b4befe',
+  cursor_border = '#c5cbff',
 
   -- your original selection style, kept as-is
   selection_fg  = 'none',
@@ -38,23 +38,23 @@ config.colors = {
 
   ansi = {
     '#1e1f2e',   -- black   → base
-    '#c47a85',   -- red     → muted desaturated rose
-    '#6a9e9e',   -- green   → teal-shifted
-    '#a89a70',   -- yellow  → desaturated sand
-    '#89b4fa',   -- blue    → main accent
-    '#b4befe',   -- magenta → lavender
-    '#7dd5f5',   -- cyan    → sky
+    '#d4708a',   -- red     → poppy cool rose
+    '#4dcfbe',   -- green   → vivid teal
+    '#6dd8f8',   -- yellow  → sky (warnings)
+    '#7eb8ff',   -- blue    → main accent
+    '#c5cbff',   -- magenta → lavender
+    '#6aaae8',   -- cyan    → sapphire
     '#cdd6f4',   -- white   → subtext1
   },
 
   brights = {
     '#363750',   -- bright black  → surface1
-    '#d49aa5',   -- bright red
-    '#8abebe',   -- bright green
-    '#c8ba90',   -- bright yellow
+    '#e490aa',   -- bright red
+    '#6edfd0',   -- bright green
+    '#a0e8ff',   -- bright yellow → sky bright
     '#a0c4ff',   -- bright blue
-    '#c8d0ff',   -- bright magenta
-    '#a0e8ff',   -- bright cyan
+    '#d8dcff',   -- bright magenta
+    '#8ac4f0',   -- bright cyan
     '#e4e8ff',   -- bright white  → text
   },
 }

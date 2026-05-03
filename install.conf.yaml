@@ -8,6 +8,7 @@
     - ~/.config/zsh
     - ~/.cache/zsh
     - ~/.local/state/tmux
+    - ~/.config/lsd
 
 - link:
     ~/.config/nvim: .config/nvim
@@ -20,6 +21,8 @@
     ~/.config/wezterm/wezterm.lua: .config/wezterm/wezterm.lua
     ~/.config/oh-my-posh: .config/oh-my-posh
     ~/.config/lazygit/config.yml: .config/lazygit/config.yml
+    ~/.config/lsd/config.yaml: .config/lsd/config.yaml
+    ~/.config/lsd/colors.yaml: .config/lsd/colors.yaml
 
 - shell:
     - command: '[ -d "$HOME/.oh-my-zsh" ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'

@@ -1,6 +1,9 @@
 
 precmd() { echo }
 
+unset LS_COLORS
+unset LSCOLORS
+
 # core alias
 alias ls='lsd -l'
 alias lsa='lsd -al'
