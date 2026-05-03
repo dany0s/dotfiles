@@ -23,7 +23,10 @@
     ~/.config/lazygit/config.yml: .config/lazygit/config.yml
     ~/.config/lsd/config.yaml: .config/lsd/config.yaml
     ~/.config/lsd/colors.yaml: .config/lsd/colors.yaml
+    ~/.config/yazi: .config/yazi
 
 - shell:
     - command: '[ -d "$HOME/.oh-my-zsh" ] || sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended'
       description: Install Oh My Zsh
+    - command: 'command -v ya >/dev/null 2>&1 && ya pkg install || true'
+      description: Install yazi packages (flavors/plugins)

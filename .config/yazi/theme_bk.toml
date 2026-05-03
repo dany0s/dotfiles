@@ -1,0 +1,175 @@
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+
+# dusk — mirrors the WezTerm ANSI 16-color palette
+
+[flavor]
+dark  = ""
+light = ""
+
+[app]
+overall = {}
+
+# ── Manager ──────────────────────────────────────────────────────────────────
+
+[mgr]
+cwd = { fg = "#6aaae8" }
+
+hovered = { bg = "#7eb8ff", fg = "#1e1f2e" }
+
+find_keyword  = { fg = "#6dd8f8", bold = true, italic = true, underline = true }
+find_position = { fg = "#c5cbff", bg = "reset", bold = true, italic = true }
+
+symlink_target = { italic = true }
+
+marker_copied   = { fg = "#6edfd0", bg = "#6edfd0" }
+marker_cut      = { fg = "#e490aa", bg = "#e490aa" }
+marker_marked   = { fg = "#8ac4f0", bg = "#8ac4f0" }
+marker_selected = { fg = "#a0e8ff", bg = "#a0e8ff" }
+marker_symbol   = "│"
+
+count_copied   = { fg = "#1e1f2e", bg = "#4dcfbe" }
+count_cut      = { fg = "#1e1f2e", bg = "#d4708a" }
+count_selected = { fg = "#1e1f2e", bg = "#6dd8f8" }
+
+border_symbol = "│"
+border_style  = { fg = "#363750" }
+
+syntect_theme = ""
+# ── Tabs ─────────────────────────────────────────────────────────────────────
+
+[tabs]
+active   = { fg = "#1e1f2e", bg = "#7eb8ff", bold = true }
+inactive = { fg = "#7eb8ff", bg = "#363750" }
+
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+# ── Mode ─────────────────────────────────────────────────────────────────────
+
+[mode]
+normal_main = { fg = "#1e1f2e", bg = "#7eb8ff", bold = true }
+normal_alt  = { fg = "#7eb8ff", bg = "#363750" }
+
+select_main = { fg = "#1e1f2e", bg = "#d4708a", bold = true }
+select_alt  = { fg = "#d4708a", bg = "#363750" }
+
+unset_main  = { fg = "#1e1f2e", bg = "#d4708a", bold = true }
+unset_alt   = { fg = "#d4708a", bg = "#363750" }
+
+# ── Indicator ────────────────────────────────────────────────────────────────
+[indicator]
+parent  = {}
+current = {}
+preview = {}
+padding = { open = "", close = "" }
+
+# ── Status bar ───────────────────────────────────────────────────────────────
+
+[status]
+overall   = {}
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+perm_sep   = { fg = "#363750" }
+perm_type  = { fg = "#4dcfbe" }                                  # green/teal
+perm_read  = { fg = "#6dd8f8" }                                  # sky
+perm_write = { fg = "#d4708a" }                                  # red
+perm_exec  = { fg = "#6aaae8" }                                  # cyan/sapphire
+
+progress_label  = { bold = true }
+progress_normal = { fg = "#4dcfbe", bg = "#1e1f2e" }
+progress_error  = { fg = "#6dd8f8", bg = "#d4708a" }
+
+# ── Which ────────────────────────────────────────────────────────────────────
+
+[which]
+cols            = 3
+mask            = { bg = "#1e1f2e" }
+cand            = { fg = "#8ac4f0" }                             # bright cyan
+rest            = { fg = "#585870" }
+desc            = { fg = "#d8dcff" }                             # bright magenta
+separator       = "  "
+separator_style = { fg = "#363750" }
+
+# ── Confirm ──────────────────────────────────────────────────────────────────
+
+[confirm]
+border     = { fg = "#7eb8ff" }
+title      = { fg = "#7eb8ff" }
+body       = {}
+list       = {}
+btn_yes    = { reversed = true }
+btn_no     = {}
+btn_labels = [ "  [Y]es  ", "  (N)o  " ]
+
+# ── Spot (preview table) ─────────────────────────────────────────────────────
+
+[spot]
+border   = { fg = "#7eb8ff" }
+title    = { fg = "#7eb8ff" }
+tbl_col  = { fg = "#7eb8ff" }
+tbl_cell = { fg = "#6dd8f8", reversed = true }
+
+# ── Notify ───────────────────────────────────────────────────────────────────
+
+[notify]
+title_info  = { fg = "#4dcfbe" }
+title_warn  = { fg = "#6dd8f8" }
+title_error = { fg = "#d4708a" }
+
+icon_info  = ""
+icon_warn  = ""
+icon_error = ""
+
+# ── Pick ─────────────────────────────────────────────────────────────────────
+
+[pick]
+border   = { fg = "#7eb8ff" }
+active   = { fg = "#c5cbff", bold = true }
+inactive = {}
+
+# ── Input ────────────────────────────────────────────────────────────────────
+
+[input]
+border   = { fg = "#7eb8ff" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+# ── Completion ───────────────────────────────────────────────────────────────
+
+[cmp]
+border   = { fg = "#7eb8ff" }
+active   = { reversed = true }
+inactive = {}
+
+icon_file    = ""
+icon_folder  = ""
+icon_command = ""
+
+# ── Tasks ────────────────────────────────────────────────────────────────────
+
+[tasks]
+border  = { fg = "#7eb8ff" }
+title   = {}
+hovered = { fg = "#c5cbff", bold = true }
+
+# ── Help ─────────────────────────────────────────────────────────────────────
+
+[help]
+on      = { fg = "#6aaae8" }
+run     = { fg = "#c5cbff" }
+desc    = {}
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#1e1f2e", bg = "#cdd6f4" }
+
+# ── Filetype colors ──────────────────────────────────────────────────────────
+
+[filetype]
+rules = [
+  { mime = "image/*",                                                                                    fg = "#6dd8f8" },  # sky
+  { mime = "{audio,video}/*",                                                                            fg = "#c5cbff" },  # lavender
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#d4708a" },  # red
+  { mime = "application/{pdf,doc,rtf}",                                                                  fg = "#6aaae8" },  # cyan
+  { mime = "inode/x-empty",                                                                              fg = "#363750" },  # dimmed
+]
