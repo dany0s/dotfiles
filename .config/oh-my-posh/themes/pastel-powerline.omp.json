@@ -11,8 +11,8 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#29315A",
-          "foreground": "#3EC669",
+          "background": "black",
+          "foreground": "green",
           "style": "powerline",
           "powerline_symbol": "\ue0b0",
           "options": {
@@ -22,13 +22,13 @@
           "type": "path"
         },
         {
-          "background": "#29315A",
-          "foreground": "#B4D4FF",
+          "background": "black",
+          "foreground": "lightBlue",
           "foreground_templates": [
-            "{{ if or (.Working.Changed) (.Staging.Changed) }}#FFCBA4{{ end }}",
-            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#FFB3C1{{ end }}",
-            "{{ if gt .Ahead 0 }}#CDB4FF{{ end }}",
-            "{{ if gt .Behind 0 }}#CDB4FF{{ end }}"
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}yellow{{ end }}",
+            "{{ if and (gt .Ahead 0) (gt .Behind 0) }}lightMagenta{{ end }}",
+            "{{ if gt .Ahead 0 }}lightMagenta{{ end }}",
+            "{{ if gt .Behind 0 }}lightMagenta{{ end }}"
           ],
           "style": "diamond",
           "trailing_diamond": "\ue0b0",
@@ -47,8 +47,8 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#1E2A4A",
-          "foreground": "#B9FBC0",
+          "background": "black",
+          "foreground": "lightGreen",
           "leading_diamond": "\ue0b2",
           "style": "diamond",
           "options": {
@@ -58,10 +58,10 @@
           "type": "time"
         },
         {
-          "background": "#253460",
-          "foreground": "#FFD6A5",
+          "background": "darkGray",
+          "foreground": "lightYellow",
           "style": "plain",
-          "template": "<#1E2A4A>\ue0b3</> {{ .UserName }}@{{ .HostName }} ",
+          "template": "<black>\ue0b3</> {{ .UserName }}@{{ .HostName }} ",
           "type": "session"
         }
       ],
@@ -72,9 +72,9 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#A0F0C0",
+          "foreground": "green",
           "foreground_templates": [
-            "{{ if gt .Code 0 }}#FFB3C1{{ end }}"
+            "{{ if gt .Code 0 }}red{{ end }}"
           ],
           "options": {
             "always_enabled": true
