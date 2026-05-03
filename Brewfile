@@ -3,6 +3,7 @@ tap "homebrew/cask-fonts"
 
 # GUI apps
 cask "wezterm"
+cask "obsidian"
 cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "font-jetbrains-mono-nerd-font"

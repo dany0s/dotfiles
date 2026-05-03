@@ -1,0 +1,14 @@
+/* Disable strikethrough in preview mode */
+.markdown-preview-view ul > li.task-list-item.is-checked,
+.markdown-preview-view ol > li.task-list-item.is-checked {
+  text-decoration: none;
+  color: var(--text-normal); /* Optional: Keeps color consistent */
+}
+
+/* Disable strikethrough in edit mode (Source Mode) */
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="x"],
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="X"] {
+  text-decoration: none;
+  color: var(--text-faint); /* Optional: Keeps color consistent */
+}
+

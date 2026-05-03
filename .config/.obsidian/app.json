@@ -1,0 +1,21 @@
+{
+  "promptDelete": true,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "images",
+  "vimMode": true,
+  "showLineNumber": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false,
+  "defaultViewMode": "preview",
+  "showIndentGuide": false,
+  "tabSize": 4,
+  "useTab": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

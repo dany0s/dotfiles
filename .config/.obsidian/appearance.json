@@ -1,0 +1,15 @@
+{
+  "baseFontSize": 14,
+  "theme": "moonstone",
+  "cssTheme": "AnuPpuccin",
+  "accentColor": "#3eacd0",
+  "interfaceFontFamily": "Inter",
+  "translucency": false,
+  "nativeMenus": false,
+  "showViewHeader": true,
+  "enabledCssSnippets": [
+    "vertical-line",
+    "check-strikethrough"
+  ],
+  "showRibbon": false
+}

@@ -1,0 +1,20 @@
+
+.markdown-source-view .cm-content {
+  position: relative;
+}
+
+.markdown-source-view .cm-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100ch; /* Adjust as needed */
+  width: 2px;
+  background: rgba(200, 200, 200, 0.2);
+  pointer-events: none;
+}
+
+/* Ensure no line shows in preview */
+.markdown-preview-view::after {
+  display: none !important;
+}
