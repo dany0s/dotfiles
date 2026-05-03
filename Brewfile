@@ -10,6 +10,7 @@ cask "font-meslo-lg-nerd-font"
 
 # CLI tools
 brew "fzf"
+brew "sevenzip"
 brew "zsh"
 brew "tmux"
 brew "rsync"

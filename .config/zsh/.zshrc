@@ -15,3 +15,6 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export EDITOR=nvim
 export VISUAL=nvim
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# opencode
+export PATH=/Users/dan/.opencode/bin:$PATH
