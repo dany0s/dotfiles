@@ -4,3 +4,5 @@
 /.config/karabiner/karabiner/automatic_backups
 /.config/karabiner/karabiner/karabiner_backup.json
 .DS_Store
+.config/yazi/plugins/
+.config/yazi/flavors/

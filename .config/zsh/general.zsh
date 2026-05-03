@@ -27,3 +27,5 @@ alias dcl='docker-compose logs -f'
 alias dcp='docker ps'
 alias clear='clear && tmux clear-history'
 
+# yazi
+alias y="yazi"
