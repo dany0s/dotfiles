@@ -9,7 +9,7 @@ table.insert(config.hyperlink_rules, {
 })
 
 -- ── font ─────────────────────────────────────────────────────────────────────
-config.font      = wezterm.font("JetBrainsMono Nerd Font Mono")
+config.font      = wezterm.font("MesloLGM Nerd Font Mono")
 config.font_size = 14
 config.allow_square_glyphs_to_overflow_width = "Never"
 
