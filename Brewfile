@@ -1,5 +1,4 @@
-# Add additional repositories
-tap "homebrew/cask-fonts"
+# Fonts are now in homebrew/cask directly
 
 # GUI apps
 cask "wezterm"
@@ -8,6 +7,7 @@ cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
+cask "brave-browser"
 
 # CLI tools
 brew "fzf"
