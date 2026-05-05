@@ -23,9 +23,13 @@ fi
 # 5. Dotfiles
 cd "$HOME/dotfiles" && ./install
 
-# 6. SDKMAN
+# 6. Install newer bash (required for SDKMAN)
+brew install bash
+
+# 7. SDKMAN
+BREW_BASH=$(brew --prefix)/bin/bash
 if [ ! -d "$HOME/.sdkman" ]; then
-  curl -s "https://get.sdkman.io" | bash
+  curl -s "https://get.sdkman.io" | $BREW_BASH
 fi
 
 export SDKMAN_DIR="$HOME/.sdkman"

@@ -10,6 +10,7 @@ cask "font-meslo-lg-nerd-font"
 cask "brave-browser"
 
 # CLI tools
+brew "bash"
 brew "fzf"
 brew "sevenzip"
 brew "zsh"
