@@ -12,6 +12,7 @@ cask "brave-browser"
 # CLI tools
 brew "bash"
 brew "fzf"
+brew "yazi"
 brew "sevenzip"
 brew "zsh"
 brew "tmux"
