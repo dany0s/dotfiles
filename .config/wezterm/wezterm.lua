@@ -24,10 +24,10 @@ config.macos_window_background_blur = 20
 config.colors = {
 
   foreground    = '#e4e8ff',
-  background    = '#1e1f2e',
+  background    = '#1e1e2e',
 
   cursor_bg     = '#c5cbff',   -- lavender
-  cursor_fg     = '#1e1f2e',
+  cursor_fg     = '#1e1e2e',
   cursor_border = '#c5cbff',
 
   -- your original selection style, kept as-is
@@ -38,7 +38,7 @@ config.colors = {
   split           = '#2a2b3d',
 
   ansi = {
-    '#1e1f2e',   -- black   → base
+    '#1e1e2e',   -- black   → base
     '#d4708a',   -- red     → poppy cool rose
     '#4dcfbe',   -- green   → vivid teal
     '#6dd8f8',   -- yellow  → sky (warnings)
