@@ -1,4 +1,3 @@
 [mgr]
 prepend_keymap = [
-    { on = [ "q" ], run = "plugin autosession -- save-and-quit", desc = "Save session and quit" },
 ]
